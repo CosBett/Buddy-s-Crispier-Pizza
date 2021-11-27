@@ -1,0 +1,9 @@
+.landing-pg{
+  background-image: url(../images/landing_bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 750px;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding-top:19%; 
