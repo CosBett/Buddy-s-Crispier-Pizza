@@ -22,9 +22,11 @@ body{
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
   height: 400px;
   border-radius: 20px;
+  padding-left: 100px;
+  font-size: 14px;
+  font-weight: bold;
 }
 .about-us{
   background-image: url(../images/customer-bg.jpg);
@@ -55,6 +57,18 @@ body{
   background-color:rgba(245, 245, 245, 0.5);
   margin-left: 380px;
   margin-right: 380px;
+}
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  margin-top: 50px;
+  border-radius: 20px;
 }
 /* #customer{
   background-image: url(../images/customer-bg.jpg);
