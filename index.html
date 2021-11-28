@@ -9,32 +9,40 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=DM+Serif+Display&family=Niconne&family=Passion+One&family=Patrick+Hand&family=Righteous&family=Ultra&display=swap" rel="stylesheet">
   <link href="./css/styles.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav#homeawesome/4.7.0/css/font-awesome.min.css">
   <title>Buddy's Crispier Pizza</title>
 </head>
 <body>
   <div class="grid-container">
-    <div class="landing-pg">
-      <div>
-        <p>nav bar</p>
+    <div class="landing-pg" id="home">
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-      <h1>Buddy's Crispier Pizza</h1>
-      <p>slogan</p>
     </div>
       <div class="header">
         <h2>Header</h2>
       </div>
-      <div class="row">
+      <div class="row" id="menu">
         <div class="col-md-4" id="menu-listing">
           Menu listing
         </div>
-        <div class="col-md-5">
-          Sliding menu images
+        <div class="col-md-5" id="sliding">
+          <img class="mySlides" src="./images/image_2.jpg">
+          <img class="mySlides" src="./images/landing_bg.jpg">
+          <img class="mySlides" src="./images/image_2.jpg">
+          <button>Order Now </button>
         </div>  
         <div class="col-md-3">
           toppings menus
         </div>
       </div>
-      <div class="about-us">
+      <div class="about-us" id="about">
         <h2>about us</h2>
       </div>
       <div class="row">
@@ -46,8 +54,8 @@
           <p> feedback form</p>
          </div>
       </div>
-      <div class="footer">
-        <p>Footer</p>
+      <div class="footer" id="contactus">
+        <p>Contact Us</p>
       </div>
     </div>
   </div>
