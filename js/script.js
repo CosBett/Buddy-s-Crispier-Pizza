@@ -31,5 +31,15 @@ function orderPizza( size, crust, topping, total ){
   this.total = total;
 }
 $(document).ready(function(){
-  
+   $('#proceed').click(function(event){
+     let pizzaSize = $('#psize-input option:selected').val();
+     let pizzaCrust = $('#pcrust-input option:selected').val();
+     let pizzaToppings = []; 
+     $.each($("input[name='ptoppings']:checked"), function(){            
+         pizzaToppings.push($(this).val());
+   });
+   console.log(pizzaToppings.join(", "));
+   switch(pizzaSize){
+
+   }
 })
