@@ -7,3 +7,13 @@
   color: white;
   text-align: center;
   padding-top:19%; 
+}
+#menu-listing{
+  background-image:url(../images/menu.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 450px;
+  border-radius: 10px;
+}
