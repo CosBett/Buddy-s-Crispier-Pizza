@@ -20,3 +20,16 @@ function carousel() {
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 3000);
 }
+
+var price, crustPrice, toppingPrice ;
+let total = 0;
+
+function orderPizza( size, crust, topping, total ){
+  this.size = size;
+  this.crust = crust;
+  this.topping = topping;
+  this.total = total;
+}
+$(document).ready(function(){
+  
+})

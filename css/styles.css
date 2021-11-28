@@ -5,11 +5,12 @@ body{
   background-image: url(../images/landing_bg.jpg);
   background-position: center center;
   background-size: cover;
-  height:750px;
+  height:auto;
   background-repeat: no-repeat;
   color: white;
   text-align: center;
   padding-top:19%; 
+  width: 100%;
 }
 #logo{
   height: 200px;
@@ -125,14 +126,22 @@ body{
 }
 #order, #order-flip {
   padding: 5px;
-  text-align: center;
-  background-color: #e5eecc;
   border: solid 1px #c3c3c3;
 }
 
 #order {
-  padding: 50px;
+  background-image: url(../images/order_bg.jpg);
   display: none;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#order h3,h4{
+  text-align: center;
 }
 .footer{
   background-image: url(../images/contactus.jpg);

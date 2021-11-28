@@ -31,72 +31,83 @@
         <p id="slogan">'Hasty and tasty'</p>
         <a href="#menu" class="button">Order now </a>
     </div>
-      <div class="header">
-        <h2>Header</h2>
+    <div class="header">
+      <h2>Header</h2>
+    </div>
+    <div class="row" id="menu">
+      <div class="col-md-5" id="menu-listing">
+        <h4>Menu</h4>
+        <dl>
+          <dt>Size</dt>
+          <dd>-small pizza ............................Ksh 600</dd>
+          <dd>-Medium pizza ........................Ksh 850</dd>
+          <dd>-Large pizza ...........................Ksh 1000</dd>
+          <dt>Crust</dt>
+          <dd>- Crispy...................................Ksh 100</dd>
+          <dd>- Stuffed ................................Ksh 110</dd>
+          <dd>- Gluten-Free ..........................Ksh 130</dd>
+          <dt>Toppings</dt>
+          <dd>- Pepperoni.............................Ksh 150</dd>
+          <dd>- Bacon ..................................Ksh 150</dd>
+          <dd>- Mushroom ............................Ksh 150</dd>
+          <dd>- Chicken BBQ.........................Ksh 150</dd>
+        </dl>
       </div>
-      <div class="row" id="menu">
-        <div class="col-md-5" id="menu-listing">
-          <h4>Menu</h4>
-          <dl>
-            <dt>Size</dt>
-            <dd>-small pizza ............................Ksh 600</dd>
-            <dd>-Medium pizza ........................Ksh 850</dd>
-            <dd>-Large pizza ...........................Ksh 1000</dd>
-            <dt>Crust</dt>
-            <dd>- Crispy...................................Ksh 100</dd>
-            <dd>- Stuffed ................................Ksh 110</dd>
-            <dd>- Gluten-Free ..........................Ksh 130</dd>
-            <dt>Toppings</dt>
-            <dd>- Pepperoni.............................Ksh 150</dd>
-            <dd>- Bacon ..................................Ksh 150</dd>
-            <dd>- Mushroom ............................Ksh 150</dd>
-            <dd>- Chicken BBQ.........................Ksh 150</dd>
-          </dl>
-        </div>
-        <div class="col-md-7" id="sliding">
-          <img class="mySlides" src="./images/pizza1.jpg">
-          <img class="mySlides" src="./images/pizza2.jpg">
-          <img class="mySlides" src="./images/pizza3.jpg">
-          <img class="mySlides" src="./images/pizza4.jpg">
-          <img class="mySlides" src="./images/pizza5.jpg">
-          <button id="order-flip">Order Now </button>
-        </div>  
-      </div>
-      <div class="container" id="order">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="dropdown">
-              <div class="form-group">
-                <label for="psize">Size</label>
-                <select class="form-control" id="psize-input">
-                  <option>Select</option>
-                  <option>Small - kshs. 600</option>
-                  <option>Medium - Kshs. 850</option>
-                  <option>Large - Kshs. 1000</option>
-                </select>
-                <label for="pcrust">Crust</label>
-                <select class="form-control" id="pcrust-input">
-                  <option>Select</option>
-                  <option>Cripsy- kshs. 100</option>
-                  <option>Stuffed - Kshs.110</option>
-                  <option>Gluten-Free - Kshs. 130</option>
-                </select>
-                <label for="ptoppings">Toppings</label>
-                <select class="form-control" id="ptoppings-input">
-                  <option>Select</option>
-                  <option>Pepperoni - kshs. 150</option>
-                  <option>Bacon - Kshs. 150</option>
-                  <option>Mushroom - Kshs. 150</option>
-                  <option>Chicken BBQ - Kshs. 150</option>
-                </select>
+      <div class="col-md-7" id="sliding">
+        <img class="mySlides" src="./images/pizza1.jpg">
+        <img class="mySlides" src="./images/pizza2.jpg">
+        <img class="mySlides" src="./images/pizza3.jpg">
+        <img class="mySlides" src="./images/pizza4.jpg">
+        <img class="mySlides" src="./images/pizza5.jpg">
+        <button id="order-flip">Order Now </button>
+      </div>  
+    </div>
+    <div class="container" id="order">
+      <div class="row">
+        <h3>Place your order here</h3>
+        <div class="col-md-5">
+          <h4>Choose here</h4>
+          <div class="form-group">
+            <label for="psize">Size</label>
+            <select class="form-control" id="psize-input">
+              <option>Select</option>
+              <option>Small - kshs. 600</option>
+              <option>Medium - Kshs. 850</option>
+              <option>Large - Kshs. 1000</option>
+            </select>
+            <label for="pcrust">Crust</label>
+            <select class="form-control" id="pcrust-input">
+              <option>Select</option>
+              <option>Cripsy- kshs. 100</option>
+              <option>Stuffed - Kshs.110</option>
+              <option>Gluten-Free - Kshs. 130</option>
+            </select>
+            <label for="Toppings">Choose the toppings you want below:</label><br>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" class="custom-control-input" id="pepperoni" value="pepperoni" name="ptoppings">
+              <label class="custom-control-label" for="pepperoni">Pepperoni</label>
             </div>
-              </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="bacon" value="bacon" name="ptoppings">
+                <label class="custom-control-label" for="Bacon">Bacon</label>
             </div>
-          </div>
-          <div class="col-md-6">
+            <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="mushrooms" value="mushrooms" name="ptoppings">
+                <label class="custom-control-label" for="mushroom">Mushrooms</label>
+            </div>
+            <div class="custom-control custom-checkbox custom-control-inline">
+              <input type="checkbox" class="custom-control-input" id="chickenbbq" value="chickenbbq" name="ptoppings">
+              <label class="custom-control-label" for="mushroom">Chicken BBQ</label>
+            </div>
+            <br><br>
+            <button type="submit" id="proceed">Proceed to Checkout</button>
           </div>
         </div>
+        <div class="col-md-7">
+          <h4>Checkout Summary</h4> 
+        </div>
       </div>
+    </div>
       <div class="about-us" id="about">
         <h2>about us</h2>
       </div>
