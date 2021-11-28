@@ -123,6 +123,17 @@ body{
   max-width:100%;
   height:400px;
 }
+#order, #order-flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#order {
+  padding: 50px;
+  display: none;
+}
 .footer{
   background-image: url(../images/contactus.jpg);
   background-position: center center;

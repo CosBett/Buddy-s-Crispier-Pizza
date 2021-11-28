@@ -29,7 +29,7 @@
         <!-- <img src="./images/logo.jpg" alt="logo image" id="logo"> -->
         <h1 id="heading">Buddy's Crispier Pizza</h1>
         <p id="slogan">'Hasty and tasty'</p>
-        <a href="#" class="button">Order now </a>
+        <a href="#menu" class="button">Order now </a>
     </div>
       <div class="header">
         <h2>Header</h2>
@@ -59,8 +59,43 @@
           <img class="mySlides" src="./images/pizza3.jpg">
           <img class="mySlides" src="./images/pizza4.jpg">
           <img class="mySlides" src="./images/pizza5.jpg">
-          <button>Order Now </button>
+          <button id="order-flip">Order Now </button>
         </div>  
+      </div>
+      <div class="container" id="order">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="dropdown">
+              <div class="form-group">
+                <label for="psize">Size</label>
+                <select class="form-control" id="psize-input">
+                  <option>Select</option>
+                  <option>Small - kshs. 600</option>
+                  <option>Medium - Kshs. 850</option>
+                  <option>Large - Kshs. 1000</option>
+                </select>
+                <label for="pcrust">Crust</label>
+                <select class="form-control" id="pcrust-input">
+                  <option>Select</option>
+                  <option>Cripsy- kshs. 100</option>
+                  <option>Stuffed - Kshs.110</option>
+                  <option>Gluten-Free - Kshs. 130</option>
+                </select>
+                <label for="ptoppings">Toppings</label>
+                <select class="form-control" id="ptoppings-input">
+                  <option>Select</option>
+                  <option>Pepperoni - kshs. 150</option>
+                  <option>Bacon - Kshs. 150</option>
+                  <option>Mushroom - Kshs. 150</option>
+                  <option>Chicken BBQ - Kshs. 150</option>
+                </select>
+            </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+          </div>
+        </div>
       </div>
       <div class="about-us" id="about">
         <h2>about us</h2>
