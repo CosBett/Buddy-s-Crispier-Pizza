@@ -36,6 +36,26 @@ body{
   text-align: center;
   padding-top:19%; 
 }
+#heading{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 60px;
+  font-weight: 900;
+  color:black;
+  background-color:rgba(245, 245, 245, 0.425);
+  margin-left: 380px;
+  margin-right: 380px;
+  margin-top: 50px;
+}
+#slogan{
+  font-family: 'Kaushan Script', cursive;
+  font-style: italic;
+  font-size: 35px;
+  font-weight: 600;
+  color:black;
+  background-color:rgba(245, 245, 245, 0.5);
+  margin-left: 380px;
+  margin-right: 380px;
+}
 /* #customer{
   background-image: url(../images/customer-bg.jpg);
   background-position: center center;
@@ -47,14 +67,14 @@ body{
 } */
 .topnav {
   overflow: hidden;
-  background-color:#333;
+  background-color:rgba(51, 51, 51, 0.452);
 }
 .topnav a {
-  float: left;
+  float:left;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 20px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -97,6 +117,7 @@ body{
   color: white;
   text-align: center;
   padding-top:19%;
+}
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
