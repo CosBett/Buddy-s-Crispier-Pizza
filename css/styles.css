@@ -204,7 +204,28 @@ h4 {
     background-repeat: no-repeat;
     color: white;
     text-align: center;
-    padding-top: 19%;
+    height: 500px;
+    font-family: 'Libre Baskerville', serif;
+    padding-top: 50px;
+}
+
+#name,
+#email {
+    width: 400px;
+    background-color: transparent;
+    border-color: white;
+    height: 35px;
+}
+
+#subject {
+    width: 850px;
+    background-color: transparent;
+    border-color: white;
+}
+
+::placeholder {
+    color: white;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 600px) {
