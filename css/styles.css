@@ -225,6 +225,11 @@
             font-size: 20px;
         }
         
+        .icons {
+            list-style: none;
+            font-size: 40px;
+        }
+        
         @media screen and (max-width: 600px) {
             .topnav a:not(:first-child) {
                 display: none;
