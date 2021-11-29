@@ -88,12 +88,50 @@ $(document).ready(function(){
         console.log(newOrder); 
    });  
    $("button#checkout").click(function(){
-    $("button#checkout").hide();
-    $("button.addPizza").hide();
-    $("button.deliver").slideDown(1000);
-    $("#addedprice").slideDown(1000);
-    console.log("Your total bills is sh. "+checkoutTotal);
-    $("#pizzatotal").append("Your bill is sh. "+checkoutTotal);
-   });    
+      $("button#checkout").hide();
+      $("button#addPizza").hide();
+      $("button#deliver").slideDown(1000);
+      $("#addedprice").slideDown(1000);
+      console.log("Total bills is Ksh. "+checkoutTotal);
+      $("#pizzatotal").append("Your bill is Ksh. "+checkoutTotal);
+   }); 
+  
+   $("button#deliver").click(function(){
+      $(".checkout-table").hide();
+      $(".summary h4").hide();
+      $("#delivery").slideDown(1000);
+      $("#addedprice").hide();
+      $("button#deliver").hide();
+      $("#pizzatotal").hide();
+
+      let deliveryamount= checkoutTotal+200;
+      console.log("The total amount will pay Ksh. "+ deliveryamount +" on delivery");
+      $("#totalbill").append("Your bill plus delivery fee is: "+deliveryamount);
+    });
+
+    $("button#final-order").click(function(event){
+      event.preventDefault();
+
+      $("#pizzatotal").hide();
+      $("#delivery").hide();
+      $("button#final-order").hide();
+      let deliveryamount= checkoutTotal+150;
+      console.log("Final Bill is: "+ deliveryamount);
+      let person = $("input#name").val();
+      let phone = $("input#phone").val();
+      let location = $("input#location").val();
+
+      if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
+  
+      $("#finalmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ " for Ksh. "+deliveryamount);
+      $("#totalbill").hide();
+      $("#finalmessage").slideDown(1200);
+      }
+      else {
+      alert("Please fill in the details for delivery!");
+      $(".delivery").show();
+      $("button#final-order").show();
+      }
+  });
   
 })
