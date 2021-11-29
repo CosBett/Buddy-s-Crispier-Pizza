@@ -177,7 +177,7 @@ $(document).ready(function() {
 
             if ($("#name").val() && $("#phone").val() && $("#location").val() != "") {
                 $(".delivery").hide();
-                $("#finalmessage").append(person + ", We have recieved your order and it will be delivered to you at " + location + " for Ksh. " + deliveryamount);
+                $("#finalmessage").append(person + ", We have recieved your order and it will be delivered to you at " + location + " for Ksh. " + deliveryamount + ". You will pay on delivery.");
                 $("#totalbill").hide();
                 $("#finalmessage").slideDown(1200);
 

@@ -38,11 +38,11 @@
             </div>
         </div>
         <div class="header">
-            <h2>Header</h2>
+            <h2 class="d-flex justify-content-center" id="main-menu">Menu</h2>
         </div>
-        <div class="container row" id="menu">
+        <divp class="container row pt-3" id="menu"><br>
             <div class="col-sm-12 col-md-5" id="menu-listing">
-                <h4>Menu</h4>
+                <h2>Menu</h2>
                 <dl>
                     <dt>Size</dt>
                     <dd>-small pizza ............................Ksh 600</dd>
@@ -69,108 +69,108 @@
             <div class="d-flex justify-content-center mb-4 mt-4">
                 <button id="order-flip" class="btn btn-success">Order Now </button>
             </div>
-        </div>
-        <div class="container" id="order">
-            <div class="row">
-                <h3>Place your order here</h3>
-                <div class="col-sm-5">
-                    <h4>Choose here</h4>
-                    <div class="form-group">
-                        <label for="psize">Size</label>
-                        <select class="form-control" id="psize-input">
+    </div>
+    <div class="container" id="order">
+        <div class="row">
+            <h3>Place your order here</h3>
+            <div class="col-sm-5">
+                <h4>Choose here</h4>
+                <div class="form-group">
+                    <label for="psize">Size</label>
+                    <select class="form-control" id="psize-input">
                             <option>Select</option>
                             <option>Small - kshs. 600</option>
                             <option>Medium - Kshs. 850</option>
                             <option>Large - Kshs. 1000</option>
                           </select>
-                        <label for="pcrust">Crust</label>
-                        <select class="form-control" id="pcrust-input">
+                    <label for="pcrust">Crust</label>
+                    <select class="form-control" id="pcrust-input">
                             <option>Select</option>
                             <option>Cripsy- kshs. 100</option>
                             <option>Stuffed - Kshs.110</option>
                             <option>Gluten-Free - Kshs. 130</option>
                           </select>
-                        <label for="Toppings">Choose the toppings you want below:</label><br>
-                        <div class="custom-control custom-checkbox custom-control-inline">
-                            <input type="checkbox" class="custom-control-input" id="pepperoni" value="pepperoni" name="ptoppings">
-                            <label class="custom-control-label" for="pepperoni">Pepperoni</label>
-                        </div>
-                        <div class="custom-control custom-checkbox custom-control-inline">
-                            <input type="checkbox" class="custom-control-input" id="bacon" value="bacon" name="ptoppings">
-                            <label class="custom-control-label" for="Bacon">Bacon</label>
-                        </div>
-                        <div class="custom-control custom-checkbox custom-control-inline">
-                            <input type="checkbox" class="custom-control-input" id="mushrooms" value="mushrooms" name="ptoppings">
-                            <label class="custom-control-label" for="mushroom">Mushrooms</label>
-                        </div>
-                        <div class="custom-control custom-checkbox custom-control-inline">
-                            <input type="checkbox" class="custom-control-input" id="chickenbbq" value="chickenbbq" name="ptoppings">
-                            <label class="custom-control-label" for="mushroom">Chicken BBQ</label>
-                        </div>
-                        <br><br>
-                        <button type="submit" class="btn btn-success" id="proceed">Proceed to Checkout</button>
+                    <label for="Toppings">Choose the toppings you want below:</label><br>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" id="pepperoni" value="pepperoni" name="ptoppings">
+                        <label class="custom-control-label" for="pepperoni">Pepperoni</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" id="bacon" value="bacon" name="ptoppings">
+                        <label class="custom-control-label" for="Bacon">Bacon</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" id="mushrooms" value="mushrooms" name="ptoppings">
+                        <label class="custom-control-label" for="mushroom">Mushrooms</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" id="chickenbbq" value="chickenbbq" name="ptoppings">
+                        <label class="custom-control-label" for="mushroom">Chicken BBQ</label>
+                    </div>
+                    <br><br>
+                    <button type="submit" class="btn btn-success" id="proceed">Proceed to Checkout</button>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <h4>Checkout Summary</h4>
+                <div class="summary">
+                    <div id="summary-orders">
+                        <h4>See you order summary below:</h4>
+                        <table class="table table-sm  checkout-table">
+                            <thead>
+                                <tr class="table-title">
+                                    <th scope="col">Size</th>
+                                    <th scope="col">Crust</th>
+                                    <th scope="col">Toppings</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ordersplaced">
+                                <tr class="table-title">
+                                    <td id="pizzasize"></td>
+                                    <td id="pizzacrust"></td>
+                                    <td id="pizzatoppings"></td>
+                                    <td id="totals"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p id="pizzatotal"></p>
+                        <p id="totalbill"></p>
+                        <p id="addedprice">Delivery will cost Ksh. 200</p>
+                        <p id="finalmessage"></p>
+                    </div>
+                    <div id="summary-button">
+                        <button class="btn btn-success" type="submit" id="addPizza">Add Pizza</button>
+                        <button class="btn btn-success" type="submit" id="checkout">Checkout</button>
+                        <button class="btn btn-success" type="submit" id="deliver">Home delivery?</button>
                     </div>
                 </div>
-                <div class="col-sm-7">
-                    <h4>Checkout Summary</h4>
-                    <div class="summary">
-                        <div id="summary-orders">
-                            <h4>See you order summary below:</h4>
-                            <table class="table table-sm  checkout-table">
-                                <thead>
-                                    <tr class="table-title">
-                                        <th scope="col">Size</th>
-                                        <th scope="col">Crust</th>
-                                        <th scope="col">Toppings</th>
-                                        <th scope="col">Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="ordersplaced">
-                                    <tr class="table-title">
-                                        <td id="pizzasize"></td>
-                                        <td id="pizzacrust"></td>
-                                        <td id="pizzatoppings"></td>
-                                        <td id="totals"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p id="pizzatotal"></p>
-                            <p id="totalbill"></p>
-                            <p id="addedprice">Delivery will cost Ksh. 200</p>
-                            <p id="finalmessage"></p>
+                <div class="delivery">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-control mb-3" placeholder="Name:e.g Cosmas">
+                            <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number:e.g 0712345678">
+                            <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery: e.g Githurai">
+                            <button class="btn btn-success" id="final-order">Place Order</button>
                         </div>
-                        <div id="summary-button">
-                            <button class="btn btn-success" type="submit" id="addPizza">Add Pizza</button>
-                            <button class="btn btn-success" type="submit" id="checkout">Checkout</button>
-                            <button class="btn btn-success" type="submit" id="deliver">Home delivery?</button>
-                        </div>
-                    </div>
-                    <div class="delivery">
-                        <form action="">
-                            <div class="form-group">
-                                <input type="text" id="name" class="form-control mb-3" placeholder="Name:e.g Cosmas">
-                                <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number:e.g 0712345678">
-                                <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery: e.g Githurai">
-                                <button class="btn btn-success" id="final-order">Place Order</button>
-                            </div>
-                        </form>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
-        <div class="about-us" id="about">
-            <div class="row">
+    </div>
+    <div class="about-us" id="about">
+        <div class="row">
+            <br>
+            <div class="col-sm-8">
                 <br>
-                <div class="col-sm-8">
-                    <br>
-                    <h2>About Us</h2>
-                    <p id="aboutp">We use fresh ingredients delivered and prepared daily.</p>
-                    <p id="aboutp">We’re committed to the leanest meats, finest poultry, real Wisconsin cheeses, fresh baked breads.</p>
-                    <p id="aboutp">Produce are delivered daily to create your favourite dishes from our expansive menu.</p><br><br>
-                </div>
+                <h2>About Us</h2>
+                <p id="aboutp">We use fresh ingredients delivered and prepared daily.</p>
+                <p id="aboutp">We’re committed to the leanest meats, finest poultry, real Wisconsin cheeses, fresh baked breads.</p>
+                <p id="aboutp">Produce are delivered daily to create your favourite dishes from our expansive menu.</p><br><br>
             </div>
         </div>
-        <!-- <div class="row" id="customer">
+    </div>
+    <!-- <div class="row" id="customer">
         <h2>customer testimonials</h2>
         <div class="column-md-6">
          <p> sliding images testimonials</p>
@@ -179,27 +179,27 @@
           <p> feedback form</p>
          </div>
       </div> -->
-        <div class="footer" id="contactus">
-            <h2>CONTACT US</h2><br>
-            <div id="cont_form" class="container-fluid-md">
-                <form id="contact-form" action="" method="" target="_blank">
-                    <input type="text" id="fname" name="NAME" placeholder="Your Name...">&emsp;&emsp;&emsp;
-                    <input type="text" id="email" name="EMAIL" placeholder="Your Email..."><br><br>
-                    <textarea id="subject" name="MESSAGE" placeholder="Your message here..." style="height:250px"></textarea><br>
-                    <input id="submit-button" type="submit" value="Send Message">
-                </form>
-                <br>
-                <div>
-                    <ul class="icons d-flex justify-content-center ">
-                        <li><i class="fa fa-facebook"></i></li>
-                        <li class="ps-3 pe-3"><i class="fa fa-twitter"></i></li>
-                        <li><i class="fa fa-instagram"></i></li>
-                    </ul>
-                    <p>Buddy's Crispier Pizza</p>
-                    <p>&copy;2021</p>
-                </div>
+    <div class="footer" id="contactus">
+        <h2>Contact us</h2>
+        <div id="cont_form" class="container-fluid-md">
+            <form id="contact-form" action="" method="" target="_blank">
+                <input type="text" id="fname" name="NAME" placeholder="Your Name...">&emsp;&emsp;&emsp;
+                <input type="text" id="email" name="EMAIL" placeholder="Your Email..."><br><br>
+                <textarea id="subject" name="MESSAGE" placeholder="Your message here..." style="height:250px"></textarea><br>
+                <input id="submit-button" type="submit" value="Send Message">
+            </form>
+            <br>
+            <div>
+                <ul class="icons d-flex justify-content-center ">
+                    <li><i class="fa fa-facebook"></i></li>
+                    <li class="ps-3 pe-3"><i class="fa fa-twitter"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                </ul>
+                <p>Buddy's Crispier Pizza</p>
+                <p>&copy;2021</p>
             </div>
         </div>
+    </div>
     </div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/jquery.mini.js"></script>
