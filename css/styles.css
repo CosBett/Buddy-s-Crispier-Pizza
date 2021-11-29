@@ -210,6 +210,10 @@
             height: 35px;
         }
         
+        #aboutp {
+            font-size: 11px;
+        }
+        
         #subject {
             width: 95%;
             background-color: transparent;
