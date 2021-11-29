@@ -1,148 +1,144 @@
-body {
-    background-color: black;
-    width: 100%;
-}
-
-.grid-container {
-    width: 100%;
-}
-
-#myTopnav {
-    vertical-align: text-top;
-}
-
-.topnav {
-    overflow: hidden;
-    background-color: rgba(51, 51, 51, 0.452);
-}
-
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-}
-
-.topnav .icon {
-    display: none;
-}
-
-.landing-pg {
-    background-image: url(../images/landing_bg.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 100vh;
-    background-repeat: no-repeat;
-    color: white;
-    width: 100vw;
-    position: relative;
-}
-
-#ordernow {
-    background-color: #04AA6D;
-    border: none;
-    color: white;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 32px;
-    border-radius: 20px;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 20px;
-}
-
-
-/* #logo {
+        body {
+            background-color: black;
+            width: 100%;
+        }
+        
+        .grid-container {
+            width: 100%;
+        }
+        
+        #myTopnav {
+            vertical-align: text-top;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: rgba(51, 51, 51, 0.452);
+        }
+        
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        
+        .topnav .icon {
+            display: none;
+        }
+        
+        .landing-pg {
+            background-image: url(../images/landing_bg.jpg);
+            background-position: center center;
+            background-size: cover;
+            height: 100vh;
+            background-repeat: no-repeat;
+            color: white;
+            width: 100vw;
+            position: relative;
+        }
+        
+        #ordernow {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 32px;
+            border-radius: 20px;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 20px;
+        }
+        /* #logo {
     height: 200px;
     width: 200px;
     float: left;
     padding-top: 5%;
 } */
-
-#menu-listing {
-    background-image: url(../images/menu.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: auto;
-    border-radius: 20px;
-    padding-left: 70px;
-    font-size: 10px;
-    font-weight: bold;
-}
-
-.about-us {
-    background-image: url(../images/customer-bg.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 100%;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
-}
-
-#heading {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 60px;
-    font-weight: 900;
-    color: black;
-    text-shadow: #a0e713e7;
-    background-color: rgba(245, 245, 245, 0.425);
-}
-
-#slogan {
-    font-family: 'Kaushan Script', cursive;
-    font-style: italic;
-    font-size: 35px;
-    font-weight: 600;
-    color: black;
-    background-color: rgba(245, 245, 245, 0.5);
-}
-
-.buddy {
-    height: 80vh;
-    margin-top: 30vh;
-}
-
-.title {
-    width: 50%;
-    margin: 0 auto;
-}
-
-tbody {
-    color: white;
-    background-color: transparent;
-}
-
-.summary {
-    display: none;
-}
-
-.delivery {
-    display: none;
-}
-
-#summary-button {
-    color: white;
-}
-
-
-/* #customer{
+        
+        #menu-listing {
+            background-image: url(../images/menu.jpg);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: auto;
+            border-radius: 20px;
+            padding-left: 70px;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        
+        .about-us {
+            background-image: url(../images/customer-bg.jpg);
+            background-position: center center;
+            background-size: cover;
+            height: 100%;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+        }
+        
+        #heading {
+            font-family: 'Abril Fatface', cursive;
+            font-size: 60px;
+            font-weight: 900;
+            color: black;
+            text-shadow: #a0e713e7;
+            background-color: rgba(245, 245, 245, 0.425);
+        }
+        
+        #slogan {
+            font-family: 'Kaushan Script', cursive;
+            font-style: italic;
+            font-size: 35px;
+            font-weight: 600;
+            color: black;
+            background-color: rgba(245, 245, 245, 0.5);
+        }
+        
+        .buddy {
+            height: 80vh;
+            margin-top: 30vh;
+        }
+        
+        .title {
+            width: 50%;
+            margin: 0 auto;
+        }
+        
+        tbody {
+            color: white;
+            background-color: transparent;
+        }
+        
+        .summary {
+            display: none;
+        }
+        
+        .delivery {
+            display: none;
+        }
+        
+        #summary-button {
+            color: white;
+        }
+        /* #customer{
   background-image: url(../images/customer-bg.jpg);
   background-position: center center;
   background-size: cover;
@@ -151,111 +147,126 @@ tbody {
   color: white;
   text-align: center;
 } */
-
-.mySlides {
-    display: none;
-}
-
-.mySlides {
-    width: fit-content;
-    width: 100%;
-    text-align: center;
-    height: 55vh;
-    border-radius: 20px;
-}
-
-#menu {
-    margin: 0 auto;
-}
-
-#sliding {
-    max-width: 100%;
-    height: 400px;
-}
-
-#order,
-#order-flip {
-    padding: 5px;
-    border: solid 1px #c3c3c3;
-    z-index: 3;
-}
-
-#order {
-    background-image: url(../images/order_bg.jpg);
-    display: none;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-#order h3,
-h4 {
-    text-align: center;
-}
-
-.footer {
-    background-image: url(../images/contactus.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
-    height: 500px;
-    font-family: 'Libre Baskerville', serif;
-    padding-top: 50px;
-}
-
-#name,
-#email {
-    width: 400px;
-    background-color: transparent;
-    border-color: white;
-    height: 35px;
-}
-
-#subject {
-    width: 850px;
-    background-color: transparent;
-    border-color: white;
-}
-
-::placeholder {
-    color: white;
-    font-size: 20px;
-}
-
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {
-        display: none;
-    }
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-    #slogan {
-        font-size: 20px;
-    }
-    #heading {
-        font-size: 35px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .topnav.responsive {
-        position: relative;
-    }
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
+        
+        .mySlides {
+            display: none;
+        }
+        
+        .mySlides {
+            width: fit-content;
+            width: 100%;
+            text-align: center;
+            height: 55vh;
+            border-radius: 20px;
+        }
+        
+        #menu {
+            margin: 0 auto;
+        }
+        
+        #sliding {
+            max-width: 100%;
+            height: 400px;
+        }
+        
+        #order,
+        #order-flip {
+            padding: 5px;
+            border: solid 1px #c3c3c3;
+            z-index: 3;
+        }
+        
+        #order {
+            background-image: url(../images/order_bg.jpg);
+            display: none;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            padding: 50px;
+        }
+        
+        #order h3,
+        h4 {
+            text-align: center;
+        }
+        
+        .footer {
+            background-image: url(../images/contactus.jpg);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+            height: 350px;
+            font-family: 'Libre Baskerville', serif;
+            padding-top: 50px;
+        }
+        
+        #name,
+        #email {
+            width: 45%;
+            background-color: transparent;
+            border-color: white;
+            height: 35px;
+        }
+        
+        #subject {
+            width: 95%;
+            background-color: transparent;
+            border-color: white;
+        }
+        
+         ::placeholder {
+            color: white;
+            font-size: 20px;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+            #slogan {
+                font-size: 20px;
+            }
+            #heading {
+                font-size: 35px;
+            }
+            .topnav.responsive {
+                position: relative;
+            }
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            #sliding {
+                margin-top: 25px;
+                height: auto;
+            }
+            #sliding img {
+                height: 250px;
+            }
+            #name,
+            #email {
+                width: 40%;
+                font-size: 12px;
+            }
+             ::placeholder {
+                color: white;
+                font-size: 10px;
+            }
+            #subject {
+                width: 95%;
+                height: 20%;
+            }
+        }
