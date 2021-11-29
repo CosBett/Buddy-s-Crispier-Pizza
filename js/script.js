@@ -139,7 +139,7 @@ $(document).ready(function() {
 
         });
 
-        $("button#checkout").click(function() {
+        $("#checkout").click(function() {
             $("#checkout").hide();
             $("#addPizza").hide();
             $("#deliver").slideDown(1000);
@@ -158,7 +158,7 @@ $(document).ready(function() {
 
             let deliveryamount = checkoutTotal + 200;
             console.log("The total amount will pay Ksh. " + deliveryamount + " on delivery");
-            $("#totalbill").append("Your bill plus delivery fee is: " + deliveryamount);
+            $("#totalbill").append("Your bill plus delivery fee is: Ksh. " + deliveryamount);
         });
 
         $("#final-order").click(function(event) {
@@ -180,7 +180,7 @@ $(document).ready(function() {
                 $("#finalmessage").append(person + ", We have recieved your order and it will be delivered to you at " + location + " for Ksh. " + deliveryamount);
                 $("#totalbill").hide();
                 $("#finalmessage").slideDown(1200);
-                add
+
             } else {
                 alert("Please fill in the details for delivery!");
                 $(".delivery").show();

@@ -66,7 +66,9 @@
                 <img class="mySlides" src="./images/pizza4.jpg">
                 <img class="mySlides" src="./images/pizza5.jpg">
             </div>
-            <button id="order-flip">Order Now </button>
+            <div class="d-flex justify-content-center mb-4 mt-4">
+                <button id="order-flip" class="btn btn-success">Order Now </button>
+            </div>
         </div>
         <div class="container" id="order">
             <div class="row">
@@ -106,7 +108,7 @@
                             <label class="custom-control-label" for="mushroom">Chicken BBQ</label>
                         </div>
                         <br><br>
-                        <button type="submit" id="proceed">Proceed to Checkout</button>
+                        <button type="submit" class="btn btn-success" id="proceed">Proceed to Checkout</button>
                     </div>
                 </div>
                 <div class="col-sm-7">
@@ -116,7 +118,7 @@
                             <h4>See you order summary below:</h4>
                             <table class="table table-sm  checkout-table">
                                 <thead>
-                                    <tr>
+                                    <tr class="table-title">
                                         <th scope="col">Size</th>
                                         <th scope="col">Crust</th>
                                         <th scope="col">Toppings</th>
@@ -124,7 +126,7 @@
                                     </tr>
                                 </thead>
                                 <tbody id="ordersplaced">
-                                    <tr>
+                                    <tr class="table-title">
                                         <td id="pizzasize"></td>
                                         <td id="pizzacrust"></td>
                                         <td id="pizzatoppings"></td>
@@ -138,9 +140,9 @@
                             <p id="finalmessage"></p>
                         </div>
                         <div id="summary-button">
-                            <button type="submit" id="addPizza">Add Pizza</button>
-                            <button type="submit" id="checkout">Checkout</button>
-                            <button type="submit" id="deliver">Home delivery?</button>
+                            <button class="btn btn-success" type="submit" id="addPizza">Add Pizza</button>
+                            <button class="btn btn-success" type="submit" id="checkout">Checkout</button>
+                            <button class="btn btn-success" type="submit" id="deliver">Home delivery?</button>
                         </div>
                     </div>
                     <div class="delivery">
@@ -149,7 +151,7 @@
                                 <input type="text" id="name" class="form-control mb-3" placeholder="Name:e.g Cosmas">
                                 <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number:e.g 0712345678">
                                 <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery: e.g Githurai">
-                                <button class="btn btn-green" id="final-order">Place Order</button>
+                                <button class="btn btn-success" id="final-order">Place Order</button>
                             </div>
                         </form>
                     </div>
@@ -161,9 +163,9 @@
                 <br>
                 <div class="col-sm-8">
                     <h2>About Us</h2><br>
-                    <p>We use fresh ingredients delivered and prepared daily.</p>
-                    <p>We’re committed to the leanest meats, finest poultry, real Wisconsin cheeses, fresh baked breads.</p>
-                    <p>Produce are delivered daily to create your favourite dishes from our expansive menu</p><br><br>
+                    <p id="aboutp">We use fresh ingredients delivered and prepared daily.</p>
+                    <p id="aboutp">We’re committed to the leanest meats, finest poultry, real Wisconsin cheeses, fresh baked breads.</p>
+                    <p id="aboutp">Produce are delivered daily to create your favourite dishes from our expansive menu</p><br><br>
                 </div>
             </div>
         </div>
@@ -180,7 +182,7 @@
             <h2>CONTACT US</h2><br>
             <div id="cont_form" class="container-fluid-md">
                 <form id="contact-form" action="" method="" target="_blank">
-                    <input type="text" id="name" name="NAME" placeholder="Your Name...">&emsp;&emsp;&emsp;
+                    <input type="text" id="fname" name="NAME" placeholder="Your Name...">&emsp;&emsp;&emsp;
                     <input type="text" id="email" name="EMAIL" placeholder="Your Email..."><br><br>
                     <textarea id="subject" name="MESSAGE" placeholder="Your message here..." style="height:250px"></textarea><br>
                     <input id="submit-button" type="submit" value="Send Message">
