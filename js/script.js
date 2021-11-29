@@ -180,6 +180,7 @@ $(document).ready(function() {
                 $("#finalmessage").append(person + ", We have recieved your order and it will be delivered to you at " + location + " for Ksh. " + deliveryamount);
                 $("#totalbill").hide();
                 $("#finalmessage").slideDown(1200);
+                add
             } else {
                 alert("Please fill in the details for delivery!");
                 $(".delivery").show();
